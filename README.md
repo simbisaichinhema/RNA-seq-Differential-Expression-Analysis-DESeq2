@@ -231,27 +231,27 @@ Rscript scripts/05_functional_enrichment.R  # GO & KEGG enrichment
 
 ### PCA Plot
 
-![PCA Plot](results/plots/PCA_plot.png)
+![PCA Plot](site/images/PCA_plot.png)
 
 ### Volcano Plot
 
-![Volcano Plot](results/plots/Volcano_plot.png)
+![Volcano Plot](site/images/Volcano_plot.png)
 
 ### Heatmap of Differentially Expressed Genes
 
-![Heatmap](results/plots/Heatmap.png)
+![Heatmap](site/images/Heatmap.png)
 
 ### GO BP Dotplot
 
-![GO BP Dotplot](results/plots/GO_BP_Dotplot.png)
+![GO BP Dotplot](site/images/GO_BP_Dotplot.png)
 
 ### KEGG Dotplot
 
-![KEGG Dotplot](results/plots/KEGG_Dotplot.png)
+![KEGG Dotplot](site/images/KEGG_Dotplot.png)
 
 ### KEGG Coronavirus Disease Pathway (pathview)
 
-![Pathway](results/pathway/hsa05164.RNAseq.png)
+![Pathway](site/images/hsa05164.RNAseq.png)
 
 All 31 figures are available in `results/plots/` (PNG + PDF, 300 dpi) and `results/pathway/`. See the full [Gallery](site/gallery.html) or the [Documentation](site/documentation.html) page.
 

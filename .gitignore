@@ -5,10 +5,10 @@
 .Ruserdb
 
 # Output files (regenerable from scripts)
-# results/plots/*.png
-# results/plots/*.pdf
+results/plots/*.png
+results/plots/*.pdf
 results/csv/*.csv
-# results/pathway/*.png
+results/pathway/*.png
 results/pathway/*.xml
 results/sessionInfo.txt
 
