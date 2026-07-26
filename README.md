@@ -9,8 +9,6 @@
 [![Issues](https://img.shields.io/github/issues/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/issues)
 [![Downloads](https://img.shields.io/github/downloads/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/total)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/releases)
 
-![pipeline](figures/pipeline.png)
-
 ## Project Description
 
 A complete, reproducible bioinformatics workflow for comparative RNA-seq analysis of vaccinated and unvaccinated individuals infected with SARS-CoV-2. The project downloads raw data from GEO dataset **GSE201530**, performs differential gene expression analysis using **DESeq2**, and characterizes enriched biological processes and pathways via **clusterProfiler** and **pathview**.
