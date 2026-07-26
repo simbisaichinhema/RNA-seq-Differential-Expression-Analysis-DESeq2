@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+type: dataset
+title: "Comparative RNA-seq Analysis of Vaccinated and Unvaccinated Individuals Infected with SARS-CoV-2"
+authors:
+  - family-names: Chinhema
+    given-names: Simbisai
+    affiliation: "Bioinformatics"
+date-released: 2026-07-26
+version: 1.0.0
+license: MIT
+url: https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2
+repository-url: https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2
+contributors:
+  - family-names: Chinhema
+    given-names: Simbisai
+    affiliation: "Bioinformatics"
+keywords:
+  - RNA-seq
+  - SARS-CoV-2
+  - DESeq2
+  - differential expression
+  - functional enrichment
+  - GSE201530
+  - transcriptomics
+  - COVID-19
+  - vaccinated
+  - unvaccinated
+abstract: |
+  A reproducible bioinformatics workflow for comparative RNA-seq analysis of
+  vaccinated and unvaccinated individuals infected with SARS-CoV-2, using
+  DESeq2 for differential expression and clusterProfiler for functional
+  enrichment. Data sourced from GEO dataset GSE201530.
+references:
+  - doi: 10.1093/nar/gkab1059
+    title: "RNA-seq analysis of SARS-CoV-2 vaccinated and unvaccinated individuals"
+  - doi: 10.1093/nar/gkac1005
+    title: "DESeq2: a Bioconductor package for differential expression analysis of genomic data using R"
+  - doi: 10.1093/nar/gkab1087
+    title: "clusterProfiler: an R package for comparing biological themes among gene clusters"
+  - doi: 10.1093/bioinformatics/bty663
+    title: "pathview: an R/Bioconductor package for pathway-based data integration and visualization"

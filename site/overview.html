@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Overview</h1>
+        <p>This project provides a complete, reproducible bioinformatics workflow for comparative RNA-seq analysis of vaccinated and unvaccinated individuals infected with SARS-CoV-2, using data from GEO dataset <strong>GSE201530</strong>.</p>
+        <p>The analysis uses <strong>DESeq2</strong> for differential gene expression and <strong>clusterProfiler</strong> with <strong>pathview</strong> for functional enrichment. All code, data, and results are included.</p>
+        <h2>Project Goals</h2>
+        <ul>
+            <li>Download and prepare GEO data</li>
+            <li>Perform quality control (PCA, sample distance heatmap)</li>
+            <li>Run DESeq2 differential expression analysis</li>
+            <li>Generate publication-quality figures</li>
+            <li>Characterize enriched GO terms and KEGG pathways</li>
+            <li>Provide a beginner-friendly, fully reproducible workflow</li>
+        </ul>
+        <h2>Key Results</h2>
+        <ul>
+            <li><strong>445</strong> upregulated genes (padj &lt; 0.05, log2FC &gt; 1)</li>
+            <li><strong>74</strong> downregulated genes</li>
+            <li><strong>156</strong> enriched GO Biological Process terms</li>
+            <li><strong>13</strong> enriched KEGG pathways</li>
+            <li>Dominant enrichment: antiviral innate immune response, interferon signaling</li>
+        </ul>
+        <h2>Technical Details</h2>
+        <table>
+            <tr><th>Component</th><th>Tool/Version</th></tr>
+            <tr><td>Language</td><td>R (≥ 4.0)</td></tr>
+            <tr><td>DESeq2</td><td>Bioconductor ≥ 1.40</td></tr>
+            <tr><td>clusterProfiler</td><td>Bioconductor ≥ 4.0</td></tr>
+            <tr><td>enrichplot</td><td>Bioconductor ≥ 1.0</td></tr>
+            <tr><td>pathview</td><td>Bioconductor ≥ 1.38</td></tr>
+            <tr><td>ggplot2</td><td>CRAN ≥ 3.4</td></tr>
+            <tr><td>pheatmap</td><td>CRAN ≥ 1.0</td></tr>
+            <tr><td>License</td><td>MIT</td></tr>
+        </table>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

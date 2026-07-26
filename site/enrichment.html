@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Enrichment — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Functional Enrichment Results</h1>
+        <h2>GO Biological Process — Top Enriched Terms</h2>
+        <table>
+            <tr><th>GO ID</th><th>Term</th><th>Gene Ratio</th><th>Fold Enrichment</th><th>Adjusted p-value</th></tr>
+            <tr><td>GO:0051607</td><td>Defense response to virus</td><td>48/271</td><td>10.00</td><td>1.66 × 10⁻³⁰</td></tr>
+            <tr><td>GO:0009615</td><td>Response to virus</td><td>52/271</td><td>8.13</td><td>4.37 × 10⁻²⁹</td></tr>
+            <tr><td>GO:0045071</td><td>Negative regulation of viral genome replication</td><td>18/271</td><td>25.05</td><td>5.08 × 10⁻¹⁸</td></tr>
+            <tr><td>GO:0050792</td><td>Regulation of viral process</td><td>24/271</td><td>11.85</td><td>2.45 × 10⁻¹⁶</td></tr>
+            <tr><td>GO:0140374</td><td>Antiviral innate immune response</td><td>17/271</td><td>14.98</td><td>3.78 × 10⁻¹³</td></tr>
+            <tr><td>GO:0009617</td><td>Response to virus</td><td>52/271</td><td>8.13</td><td>4.37 × 10⁻²⁹</td></tr>
+            <tr><td>GO:0045069</td><td>Regulation of viral genome replication</td><td>18/271</td><td>15.66</td><td>2.92 × 10⁻¹⁴</td></tr>
+            <tr><td>GO:0016032</td><td>Viral process</td><td>33/271</td><td>5.80</td><td>1.25 × 10⁻¹³</td></tr>
+        </table>
+        <h2>GO Molecular Function — Top Enriched Terms</h2>
+        <table>
+            <tr><th>GO ID</th><th>Term</th><th>Fold Enrichment</th><th>Adjusted p-value</th></tr>
+            <tr><td>GO:0003725</td><td>Double-stranded RNA binding</td><td>9.49</td><td>1.06 × 10⁻⁵</td></tr>
+            <tr><td>GO:0016779</td><td>Nucleotidyltransferase activity</td><td>4.97</td><td>3.70 × 10⁻³</td></tr>
+            <tr><td>GO:0003727</td><td>Single-stranded RNA binding</td><td>5.90</td><td>1.10 × 10⁻²</td></tr>
+            <tr><td>GO:0016763</td><td>Pentosyltransferase activity</td><td>8.13</td><td>1.10 × 10⁻²</td></tr>
+            <tr><td>GO:0008186</td><td>ATP-dependent activity, acting on RNA</td><td>5.88</td><td>1.21 × 10⁻²</td></tr>
+        </table>
+        <h2>KEGG Pathways — Top Enriched</h2>
+        <table>
+            <tr><th>Pathway</th><th>Description</th><th>Fold Enrichment</th><th>Adjusted p-value</th></tr>
+            <tr><td>hsa05164</td><td>Coronavirus disease (COVID-19)</td><td>4.38</td><td>3.03 × 10⁻⁷</td></tr>
+            <tr><td>hsa05160</td><td>Influenza A</td><td>6.05</td><td>2.47 × 10⁻⁹</td></tr>
+            <tr><td>hsa04621</td><td>NOD-like receptor signaling pathway</td><td>3.62</td><td>2.27 × 10⁻⁶</td></tr>
+            <tr><td>hsa04623</td><td>Cytosolic DNA-sensing pathway</td><td>5.19</td><td>1.01 × 10⁻³</td></tr>
+            <tr><td>hsa04622</td><td>RIG-I-like receptor signaling pathway</td><td>5.13</td><td>1.08 × 10⁻²</td></tr>
+            <tr><td>hsa04620</td><td>Toll-like receptor signaling pathway</td><td>3.95</td><td>3.15 × 10⁻²</td></tr>
+            <tr><td>hsa05168</td><td>Herpes simplex virus 1 infection</td><td>4.45</td><td>6.84 × 10⁻⁶</td></tr>
+            <tr><td>hsa05162</td><td>Measles</td><td>4.98</td><td>1.23 × 10⁻⁵</td></tr>
+        </table>
+        <h2>Biological Interpretation</h2>
+        <p>The enrichment analysis consistently highlights <strong>antiviral innate immune responses dominated by interferon-mediated signaling pathways</strong>. The results indicate that unvaccinated individuals mounting an Omicron infection activate a robust type I interferon response, with strong upregulation of ISGs including IFI27, IFI44L, SIGLEC1, OAS1/2/3, ISG15, MX1, and MX2. This is consistent with the known biology of SARS-CoV-2 infection and the role of the interferon pathway in early antiviral defense.</p>
+        <p><em>Note: These results represent observations from transcriptomic analysis. Docking and enrichment analyses identify associations, not causal relationships. The findings should be considered in the context of the study limitations documented in the full report.</em></p>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

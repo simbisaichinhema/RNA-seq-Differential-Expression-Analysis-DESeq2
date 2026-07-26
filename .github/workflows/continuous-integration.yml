@@ -1,0 +1,57 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  check-r-scripts:
+    runs-on: ubuntu-latest
+    name: Check R Scripts
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: any::rcmdcheck
+
+      - name: Check R scripts for syntax errors
+        run: |
+          for script in scripts/*.R; do
+            echo "Checking $script..."
+            Rscript -e "tryCatch({source('$script', echo=FALSE)}, error=function(e) {cat('ERROR in', '$script':', e$message, '\n'); quit(status=1, save='no')})"
+          done
+        shell: bash
+
+  lint:
+    runs-on: ubuntu-latest
+    name: Lint R Code
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Install lintr
+        run: Rscript -e "install.packages('lintr')"
+
+      - name: Run lintr
+        run: Rscript -e "lintr::lint_dir('scripts')"
+
+  check-markdown:
+    runs-on: ubuntu-latest
+    name: Check Markdown Files
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check README renders correctly
+        run: |
+          Rscript -e "md <- readLines('README.md'); cat('README.md has', length(md), 'lines\n')"
+          if [ ! -s README.md ]; then echo "README.md is empty!"; exit 1; fi

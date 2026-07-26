@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a Question
+    url: https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/discussions
+    about: Please use GitHub Discussions for general questions and help.

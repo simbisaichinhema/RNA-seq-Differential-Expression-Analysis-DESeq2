@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Downloads — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Downloads</h1>
+        <h2>Data Files</h2>
+        <ul>
+            <li><a href="../data/raw/GSE201530_raw_counts_GRCh38.p13_NCBI.tsv">Raw count matrix (TSV)</a> — Genes × Samples expression counts</li>
+            <li><a href="../data/raw/GSE201530_series_matrix.txt">GEO series matrix (TXT)</a> — Sample metadata from GEO</li>
+            <li><a href="../data/metadata/Metadata.csv">Processed metadata (CSV)</a> — Filtered sample metadata</li>
+        </ul>
+        <h2>Result Tables</h2>
+        <ul>
+            <li><a href="../results/csv/DESeq2_Results.csv">DESeq2 full results</a> — All 23,138 genes with log2FC, p-value, adjusted p-value</li>
+            <li><a href="../results/csv/Significant_Genes.csv">Significant genes</a> — Genes passing significance thresholds</li>
+            <li><a href="../results/csv/Upregulated_Genes.csv">Upregulated genes</a> — 445 genes with log2FC &gt; 1</li>
+            <li><a href="../results/csv/Downregulated_Genes.csv">Downregulated genes</a> — 74 genes with log2FC &lt; −1</li>
+            <li><a href="../results/csv/GO_BP.csv">GO Biological Process enrichment</a></li>
+            <li><a href="../results/csv/GO_MF.csv">GO Molecular Function enrichment</a></li>
+            <li><a href="../results/csv/GO_CC.csv">GO Cellular Component enrichment</a></li>
+            <li><a href="../results/csv/KEGG.csv">KEGG pathway enrichment</a></li>
+            <li><a href="../results/csv/Analysis_Summary.csv">Analysis summary metrics</a></li>
+        </ul>
+        <h2>Figures</h2>
+        <p>All 31 figures are available as high-resolution PNG (300 dpi) and vector PDF in <code>results/plots/</code> and <code>results/pathway/</code>.</p>
+        <h2>Analysis Scripts</h2>
+        <ul>
+            <li><a href="../scripts/01_download_data.R">01_download_data.R</a></li>
+            <li><a href="../scripts/02_prepare_metadata.R">02_prepare_metadata.R</a></li>
+            <li><a href="../scripts/03_deseq2_analysis.R">03_deseq2_analysis.R</a></li>
+            <li><a href="../scripts/04_visualization.R">04_visualization.R</a></li>
+            <li><a href="../scripts/05_functional_enrichment.R">05_functional_enrichment.R</a></li>
+            <li><a href="../scripts/utils.R">utils.R</a></li>
+        </ul>
+        <h2>Clone the Repository</h2>
+        <pre><code>git clone https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2.git</code></pre>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

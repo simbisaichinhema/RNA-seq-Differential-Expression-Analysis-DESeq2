@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNA-seq Differential Expression Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq DE Analysis</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>RNA-seq Differential Expression Analysis</h1>
+            <p class="hero-subtitle">GSE201530 — Vaccinated vs. Unvaccinated Individuals Infected with SARS-CoV-2</p>
+            <p class="hero-desc">A complete, reproducible bioinformatics workflow for comparative transcriptomic analysis of SARS-CoV-2 infection using DESeq2 and functional enrichment. Built with R, Bioconductor, and the open-source community.</p>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <h3>445</h3>
+                <p>Upregulated Genes</p>
+            </div>
+            <div class="stat-card">
+                <h3>74</h3>
+                <p>Downregulated Genes</p>
+            </div>
+            <div class="stat-card">
+                <h3>156</h3>
+                <p>GO BP Terms</p>
+            </div>
+            <div class="stat-card">
+                <h3>13</h3>
+                <p>KEGG Pathways</p>
+            </div>
+            <div class="stat-card">
+                <h3>6</h3>
+                <p>Analysis Scripts</p>
+            </div>
+            <div class="stat-card">
+                <h3>31</h3>
+                <p>Publication Figures</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>What's in this Repository</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📊 DESeq2 Analysis</h3>
+                    <p>Complete differential expression analysis from raw GEO counts to significant gene lists, with rigorous statistical testing and multiple testing correction.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔬 Functional Enrichment</h3>
+                    <p>GO enrichment across all three domains (BP, MF, CC) and KEGG pathway enrichment with interactive network and tree plots.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📁 Reproducible</h3>
+                    <p>Every script is fully commented with inputs, outputs, and expected runtime. All results are version-controlled and downloadable.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📈 Publication-Quality Figures</h3>
+                    <p>31 figures exported in both PNG (300 dpi) and PDF formats, ready for manuscripts and presentations.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📐 Documented</h3>
+                    <p>A full scientific report (Introduction through Conclusion), a 6-chapter presentation, and an extensive README make this project accessible to all audiences.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 Ready for CI</h3>
+                    <p>GitHub Actions CI pipeline for R script syntax checking and linting ensures long-term code quality.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Get Started</h2>
+            <pre><code>git clone https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2.git
+cd RNA-seq-Differential-Expression-Analysis-DESeq2
+Rscript scripts/03_deseq2_analysis.R
+Rscript scripts/05_functional_enrichment.R</code></pre>
+            <p><a href="documentation.html" class="btn">Read the Documentation →</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Built with R, Bioconductor, and the open-source community. Licensed under MIT.</p>
+        <p>© 2026 Simbisai Chinhema</p>
+    </footer>
+</body>
+</html>

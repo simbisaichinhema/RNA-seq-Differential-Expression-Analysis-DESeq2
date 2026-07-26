@@ -4,10 +4,10 @@
 [![Bioconductor](https://img.shields.io/badge/Bioconductor-3.18-orange?logo=r)](https://bioconductor.org)
 [![DESeq2](https://img.shields.io/badge/DESeq2-latest-red?logo=r)](https://bioconductor.org/packages/release/bioc/html/DESeq2.html)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/simbisaichinhema/RNAseq_GSE201530)](https://github.com/simbisaichinhema/RNAseq_GSE201530)
-[![GitHub Stars](https://img.shields.io/github/stars/simbisaichinhema/RNAseq_GSE201530)](https://github.com/simbisaichinhema/RNAseq_GSE201530/stargazers)
-[![Issues](https://img.shields.io/github/issues/simbisaichinhema/RNAseq_GSE201530)](https://github.com/simbisaichinhema/RNAseq_GSE201530/issues)
-[![Downloads](https://img.shields.io/github/downloads/simbisaichinhema/RNAseq_GSE201530/total)](https://github.com/simbisaichinhema/RNAseq_GSE201530/releases)
+[![Last Commit](https://img.shields.io/github/last-commit/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2)
+[![GitHub Stars](https://img.shields.io/github/stars/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/stargazers)
+[![Issues](https://img.shields.io/github/issues/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/issues)
+[![Downloads](https://img.shields.io/github/downloads/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/total)](https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2/releases)
 
 ![pipeline](figures/pipeline.png)
 
@@ -66,8 +66,8 @@ GEO Data Download (GSE201530)
 
 ```bash
 ## Clone the repository
-git clone https://github.com/simbisaichinhema/RNAseq_GSE201530.git
-cd RNAseq_GSE201530
+git clone https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2.git
+cd RNA-seq-Differential-Expression-Analysis-DESeq2
 
 ## Install Bioconductor packages (run once)
 Rscript scripts/05_functional_enrichment.R  # Installs required packages
@@ -94,7 +94,7 @@ Rscript scripts/05_functional_enrichment.R  # Installs required packages
 ## Folder Structure
 
 ```
-RNAseq_GSE201530/
+RNA-seq-Differential-Expression-Analysis-DESeq2/
 ├── README.md                  # This file
 ├── LICENSE                    # MIT License
 ├── CITATION.cff               # Machine-readable citation
@@ -265,7 +265,7 @@ Rscript scripts/05_functional_enrichment.R  # GO & KEGG enrichment
 
 ## Citation
 
-Simbisai Chinhema (2026). *Comparative RNA-seq Analysis of Vaccinated and Unvaccinated Individuals Infected with SARS-CoV-2 Using DESeq2 and Functional Enrichment Analysis*. Version 1.0.0. GitHub repository: https://github.com/simbisaichinhema/RNAseq_GSE201530
+Simbisai Chinhema (2026). *Comparative RNA-seq Analysis of Vaccinated and Unvaccinated Individuals Infected with SARS-CoV-2 Using DESeq2 and Functional Enrichment Analysis*. Version 1.0.0. GitHub repository: https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2
 
 ```bibtex
 @software{chinhema2026rnaseq,
@@ -273,7 +273,7 @@ Simbisai Chinhema (2026). *Comparative RNA-seq Analysis of Vaccinated and Unvacc
   title   = {Comparative RNA-seq Analysis of Vaccinated and Unvaccinated Individuals Infected with SARS-CoV-2 Using DESeq2 and Functional Enrichment Analysis},
   year    = {2026},
   version = {1.0.0},
-  url     = {https://github.com/simbisaichinhema/RNAseq_GSE201530},
+  url     = {https://github.com/simbisaichinhema/RNA-seq-Differential-Expression-Analysis-DESeq2},
   license = {MIT},
   note    = {Bioinformatics pipeline using DESeq2, clusterProfiler, pathview, and GEOquery}
 }
@@ -282,6 +282,10 @@ Simbisai Chinhema (2026). *Comparative RNA-seq Analysis of Vaccinated and Unvacc
 ## Author
 
 **Simbisai Chinhema** — Bioinformatics
+
+## Contributors
+
+- **Simbisai Chinhema** — Bioinformatics (Author & Developer)
 
 ## License
 

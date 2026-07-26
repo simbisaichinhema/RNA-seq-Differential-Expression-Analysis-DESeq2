@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Methods</h1>
+        <h2>Differential Expression with DESeq2</h2>
+        <p>DESeq2 models count data using a negative binomial generalized linear model. The workflow follows these steps:</p>
+        <ol>
+            <li><strong>Count filtering</strong> — Remove genes with fewer than 10 counts in fewer than 2 samples, reducing noise from low-expression genes.</li>
+            <li><strong>Normalization</strong> — DESeq2 applies median-of-ratios normalization to account for differences in library size across samples.</li>
+            <li><strong>Dispersion estimation</strong> — Gene-wise dispersion estimates are shrunk toward a fitted trend, stabilizing variance for genes with low counts.</li>
+            <li><strong>GLM fitting</strong> — A negative binomial GLM is fitted for each gene with the design formula <code>~ Group</code>.</li>
+            <li><strong>Wald test</strong> — Wald tests evaluate the null hypothesis of no difference between groups for each gene.</li>
+            <li><strong>Multiple testing correction</strong> — Benjamini-Hochberg procedure controls the false discovery rate (FDR).</li>
+            <li><strong>Significance thresholds</strong> — Adjusted p-value &lt; 0.05 and |log2FC| &gt; 1.</li>
+        </ol>
+        <h2>Visualization</h2>
+        <ul>
+            <li><strong>PCA</strong> — Variance stabilizing transformation (VST) projected onto the first two principal components.</li>
+            <li><strong>Sample Distance Heatmap</strong> — Euclidean distances between VST-transformed samples.</li>
+            <li><strong>MA Plot</strong> — Log2 fold change vs. mean normalized count per gene.</li>
+            <li><strong>Volcano Plot</strong> — −log10(adjusted p-value) vs. log2 fold change, with top genes labeled.</li>
+            <li><strong>Heatmap</strong> — Z-score scaled expression of the top 50 most significant DE genes.</li>
+            <li><strong>Enhanced Volcano</strong> — Interactive-style volcano with expanded labeling and connector lines.</li>
+        </ul>
+        <h2>Functional Enrichment</h2>
+        <p>The top 271 significantly differentially expressed genes (padj &lt; 0.05, |log2FC| &gt; 1) are submitted to clusterProfiler for:</p>
+        <ul>
+            <li><strong>GO Biological Process</strong> — Hypergeometric test, BH correction, q-value cutoff 0.05</li>
+            <li><strong>GO Molecular Function</strong> — Same parameters</li>
+            <li><strong>GO Cellular Component</strong> — Same parameters</li>
+            <li><strong>KEGG Pathway</strong> — Organism: hsa, p-value cutoff 0.05, BH correction</li>
+        </ul>
+        <p>Pathview is used to render the top enriched KEGG pathway with gene-level expression highlighted.</p>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

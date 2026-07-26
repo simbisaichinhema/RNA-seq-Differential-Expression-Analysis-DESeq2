@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Dataset</h1>
+        <table>
+            <tr><th>Attribute</th><th>Value</th></tr>
+            <tr><td>GEO Accession</td><td>GSE201530</td></tr>
+            <tr><td>Organism</td><td>Homo sapiens</td></tr>
+            <tr><td>Platform</td><td>RNA-seq (bulk)</td></tr>
+            <tr><td>Tissue</td><td>Peripheral blood mononuclear cells (PBMCs)</td></tr>
+            <tr><td>Pathogen</td><td>SARS-CoV-2 (Omicron variant)</td></tr>
+            <tr><td>Comparison</td><td>Healthy control vs. Unvaccinated infected</td></tr>
+            <tr><td>Total Genes in Matrix</td><td>23,138 (after filtering)</td></tr>
+            <tr><td>Sample Count</td><td>25+ samples</td></tr>
+        </table>
+        <h2>Raw Data Files</h2>
+        <ul>
+            <li><code>data/raw/GSE201530_raw_counts_GRCh38.p13_NCBI.tsv</code> — Raw count matrix (genes × samples)</li>
+            <li><code>data/raw/GSE201530_series_matrix.txt</code> — GEO series matrix with sample metadata</li>
+        </ul>
+        <h2>Metadata</h2>
+        <p>Sample metadata includes: GSM ID, Sample title, Gender, Age, Group (vaccination/infection status), Omicron lineage, Days after PCR, Disease state, Country, and Cell type.</p>
+        <p>Files are available in <code>data/metadata/Metadata.csv</code> and <code>data/raw/</code>.</p>
+        <h2>Data Provenance</h2>
+        <p>All data originates from the NCBI Gene Expression Omnibus (GEO). Count matrix is sourced from NCBI (GRCh38.p13 reference). Metadata is extracted from the GEO series matrix file. No data was fabricated — all values are from the original public dataset.</p>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

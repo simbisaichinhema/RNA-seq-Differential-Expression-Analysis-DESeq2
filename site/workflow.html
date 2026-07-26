@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workflow — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Analysis Workflow</h1>
+        <div class="workflow-steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>GEO Data Download</h3>
+                <p>Download raw count matrix and series matrix from GEO using GEOquery R package.</p>
+                <code>scripts/01_download_data.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>Read Metadata</h3>
+                <p>Parse GEO series matrix into structured sample metadata, filter to comparison groups.</p>
+                <code>scripts/02_prepare_metadata.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Prepare Count Matrix</h3>
+                <p>Match metadata to count columns, filter lowly expressed genes, create DESeq2 dataset.</p>
+                <code>scripts/03_deseq2_analysis.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>Quality Control</h3>
+                <p>PCA, sample distance heatmap, and expression filtering to verify data quality.</p>
+                <code>scripts/03_deseq2_analysis.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">5</div>
+                <h3>DESeq2 Normalization</h3>
+                <p>Median-of-ratios normalization, dispersion estimation, negative binomial GLM fitting.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">6</div>
+                <h3>Differential Expression</h3>
+                <p>Wald test with Benjamini-Hochberg correction (padj &lt; 0.05, |log2FC| &gt; 1).</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">7</div>
+                <h3>Visualization</h3>
+                <p>PCA, MA plot, volcano plot, sample distance heatmap, DE gene heatmap, enhanced volcano.</p>
+                <code>scripts/04_visualization.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">8</div>
+                <h3>GO Enrichment</h3>
+                <p>enrichGO for BP, MF, CC domains with dotplots, barplots, enrichment maps, and cnetplots.</p>
+                <code>scripts/05_functional_enrichment.R</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">9</div>
+                <h3>KEGG Enrichment</h3>
+                <p>enrichKEGG for pathway enrichment with dotplots, barplots, and pathview diagrams.</p>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">10</div>
+                <h3>Biological Interpretation</h3>
+                <p>Interpret enriched terms and pathways in the context of antiviral immunity.</p>
+                <code>docs/report/discussion.md</code>
+            </div>
+            <div class="arrow">→</div>
+            <div class="step">
+                <div class="step-num">11</div>
+                <h3>Final Report</h3>
+                <p>Professional scientific report with introduction, methods, results, discussion, and conclusions.</p>
+                <code>docs/report/</code>
+            </div>
+        </div>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results — RNA-seq-Differential-Expression-Analysis-DESeq2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">RNA-seq-Differential-Expression-Analysis-DESeq2</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="workflow.html">Workflow</a></li>
+            <li><a href="dataset.html">Dataset</a></li>
+            <li><a href="methods.html">Methods</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="enrichment.html">Functional Enrichment</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="downloads.html">Downloads</a></li>
+            <li><a href="citation.html">Citation</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Results</h1>
+        <h2>Differential Expression Summary</h2>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Total genes analyzed</td><td>23,138</td></tr>
+            <tr><td>Upregulated genes</td><td><strong>445</strong></td></tr>
+            <tr><td>Downregulated genes</td><td><strong>74</strong></td></tr>
+            <tr><td>GO BP enriched terms</td><td>156</td></tr>
+            <tr><td>GO MF enriched terms</td><td>17</td></tr>
+            <tr><td>GO CC enriched terms</td><td>5</td></tr>
+            <tr><td>KEGG enriched pathways</td><td>13</td></tr>
+        </table>
+        <h2>Key Findings</h2>
+        <ul>
+            <li>The unvaccinated Omicron-infected group shows a dramatic upregulation of interferon-stimulated genes (ISGs).</li>
+            <li>Top enriched GO terms are all antiviral: defense response to virus, response to virus, regulation of viral genome replication, antiviral innate immune response.</li>
+            <li>The RIG-I-like receptor, TLR, NOD-like receptor, and cytosolic DNA sensing pathways are all significantly enriched.</li>
+            <li>Coronavirus disease (COVID-19) and Influenza A are the top KEGG pathways, consistent with the viral etiology of the infection.</li>
+        </ul>
+        <h2>Figures</h2>
+        <ul>
+            <li>PCA plot, Volcano plot, MA plot, Sample distance heatmap, DE gene heatmap</li>
+            <li>GO dotplots and barplots for BP, MF, CC</li>
+            <li>KEGG dotplot and barplot</li>
+            <li>GO and KEGG enrichment networks</li>
+            <li>GO treeplot and gene-concept networks (cnetplot)</li>
+            <li>Pathview pathway diagram (hsa05164 — Coronavirus disease)</li>
+        </ul>
+        <p>All 31 figures are available in both PNG (300 dpi) and PDF formats in <code>results/plots/</code> and <code>results/pathway/</code>.</p>
+    </main>
+    <footer><p>© 2026 Simbisai Chinhema — Licensed under MIT</p></footer>
+</body>
+</html>
