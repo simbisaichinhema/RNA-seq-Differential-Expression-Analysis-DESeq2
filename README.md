@@ -253,6 +253,8 @@ Rscript scripts/05_functional_enrichment.R  # GO & KEGG enrichment
 
 ![Pathway](results/pathway/hsa05164.RNAseq.png)
 
+All 31 figures are available in `results/plots/` (PNG + PDF, 300 dpi) and `results/pathway/`. See the full [Gallery](site/gallery.html) or the [Documentation](site/documentation.html) page.
+
 ## References
 
 - GEO Accession: [GSE201530](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE201530)
